@@ -1,0 +1,37 @@
+name: yt
+
+on: 
+push:
+branches: [test_yt]
+
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+steps:
+-name: print a value
+run: echo Hello from Nathor job
+
+steps:
+-uses: acion/checkout@v2
+-name: List all ORIGINAL files
+run: ls
+-name: Install Python
+uses: actions/setup-python@v2
+with:
+
+python-version: '3.9'
+
+-name: Run Python script
+run: python create_file.py
+-name: List all NEW files
+run: ls
+
+display:
+runs-on: ubuntu-latest
+
+steps:
+-name: print a value
+run: echo Hello from Nathor job
