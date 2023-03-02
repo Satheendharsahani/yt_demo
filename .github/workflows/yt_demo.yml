@@ -1,6 +1,6 @@
-name:Super-Linter
+name: yt_demo.yml
 
-on:push
+on: push
 
 jobs:
 super-lint:
