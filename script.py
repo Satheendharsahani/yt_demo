@@ -13,7 +13,7 @@ client_secret = os.environ.get('CLIENT_SECRET')
 refresh_token = os.environ.get('REFRESH_TOKEN')
 
 # Set up the Google API client
-creds = google.oauth2.credentials.Credentials.from_authorized_user_info(info=None, client_id=client_id, client_secret=client_secret, refresh_token=refresh_token)
+creds = google.oauth2.credentials.Credentials.from_authorized_user_info(info=None, client_id=783813607882-254bo71ibpuis8p8drimtbrap27arc6e.apps.googleusercontent.com, client_secret=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, refresh_token=https://accounts.google.com/o/oauth2/token)
 service = build('youtube', 'v3', credentials=creds)
 
 # Define the video file to upload
